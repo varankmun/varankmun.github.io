@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
+        <title>VENUE - ŞİVFLMUN</title>
+        <link rel="stylesheet" type="text/css" href="assets/venue.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+
+                            <li><a href="committees.html">COMMITTEES</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+              <div class="container5">
+                <h1>VENUE</h1>
+              </div>
+              <div class="row">
+                <div class="course-color">
+                  
+                    <h3>Our conference will take place at Göztepe Campus of Marmara University.</h3>
+                    <img id="goztepeimg" src="assets/resources/goztepe.jpg">
+                    <h3>
+                       For further information, please <a href="contact.html">contact</a> us for more details.
+                        </h3>
+                        <div class="container3">
+                        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.82919367268!2d29.050082475926718!3d40.98522087135379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac78dac1ac9a3%3A0xbd47329deac1fedf!2sMarmara%20University%20Goztepe%20Campus!5e0!3m2!1sen!2str!4v1715891361896!5m2!1sen!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+                    </div>
+                    </div>
+    
+      
+            </div>
+        </section>
+
+
+        
+        </section>
+       
+
+        <script>
+          
+
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.display = "block";
+                navLinks.style.right = "0";
+          
+
+            }
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+                navLinks.style.display = "none";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "https://www.instagram.com/varankgofficial/?hl=en";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+    </body>
+</html>
