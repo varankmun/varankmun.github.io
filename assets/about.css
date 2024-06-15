@@ -5,6 +5,23 @@
     font-family: 'Roboto', sans-serif;
 
 }
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+  p.copyright {
+    margin: 10px;
+    color: white;
+    font-size: medium;
+  }
+  body{
+    min-height: 100vh; 
+    background-color: #4f4e4e;
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+  }
 .h6
 {
     text-align: left;
