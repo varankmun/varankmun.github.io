@@ -2,34 +2,36 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
-        <title>APPLY - ŞİVFLMUN</title>
+        <title>Redirecting...</title>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                var countdown = 3;
+                var countdownLabel = document.getElementById('countdown');
+                countdownLabel.innerHTML = `Redirecting you to sivflmun.com/applynew in ${countdown} second(s)`;
+    
+                var interval = setInterval(function() {
+                    countdown--;
+                    if (countdown > 0) {
+                        countdownLabel.innerHTML = `Redirecting you to sivflmun.com/applynew in ${countdown} second(s)`;
+                    }
+                     else {
+                        clearInterval(interval);
+                        window.location.href = "https://sivflmun.com/applynew";
+                    }
+                }, 1000);
+            });
+        </script>
         <link rel="stylesheet" type="text/css" href="assets/about.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="header">
-              <nav>
-             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
-                <div class="nav-links" id="navlinks">
-
-                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
-                    <ul>
-                        <li>
-
-                            <li><a href="committees.html">COMMITTEES</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="venue.html">VENUE</a></li>
-                        </li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
-              </nav>
+             
              <div class="text-box">
                 <img id="images" src="assets/resources/varanklogo.png"> 
-                <h1>Coming Soon</h1>
-                    <button type="button" onclick="redirectAbout()" ><span></span>Go Back</button>
+                <h1 id="countdown">Redirecting you to sivflmun.com/applynew in 3 seconds.</h1>
+                <button type="button" onclick="redirectAbout()" ><span></span>Didn't work? Click here</button>
              </div> 
         </section>
 
@@ -55,7 +57,7 @@
             }
             function redirectAbout()
             {
-                window.location.href = "index.html";
+                window.location.href = "https://sivflmun.com/applynew.html";
             }
             function copyFunction() {
          
