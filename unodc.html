@@ -32,18 +32,20 @@
                 <h1>UNODC</h1>
               </div>
               <div class="row">
-                <div class="course-color">
+          
                     <div class="container09">
                         <h1>About the committee</h1>
                         <h3 class="intro">
                             The United Nations Office on Drugs and Crime (UNODC) spearheads the global fight against the scourge of drug trafficking and organized crime. With a keen focus on South America, a region deeply affected by these issues, we will delve into the complexities of the drug trade from cultivation to market and assess its impacts on communities. Your contributions will help formulate robust law enforcement strategies, enhance international collaborations, and support recovery programs. Engage with UNODC to create sustainable solutions that aim to dismantle trafficking networks and foster a safer, healthier environment across South America.
  
                         </p>
-                            <h3> <a href="assets/guides/UNODC.pdf" target="_blank">-> Click here to see the study guide.</a></h3>
+                            <div class="studyguide-container">
+                                <button onclick="redirectToPDF()" class="guide-button">STUDY GUIDE</button>
+                            </div>
                     </div>
             
                
-                    </div>
+              
                     </div>
                     
       
@@ -66,6 +68,9 @@
           
 
             }
+             function redirectToPDF() {
+            window.location.href = 'sivflmun.com/assets/guides/UNODC.pdf';
+}
             function hideBar()
             {
                 navLinks.style.right = "-200px"
