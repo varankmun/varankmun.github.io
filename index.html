@@ -28,41 +28,13 @@
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
               </nav>
-              <div class="containertext11">
+              <div class="text-box">
                 <img id="images" src="assets/resources/varanklogo.png"> 
-                <h1 class="header-text">ŞEHİT İLHAN VARANK HIGH SCHOOL OF SCIENCE</h1>
-                <h1 class="header-text">MODEL UNITED NATIONS</h1>
-                <h5>July 4th-7th, 2024</h5>
-              </div>
-              <div class="container11">
-                <div class="counter-container">
-                  <span2 id="days" class="counter">0</span2>
-                  <span2>Day(s)</span2>
+                <h1>VarankMUN'24 Conference has ended.</h1>
+                <h1>Thank you for participating!</h1>
+                <h5>See your photos by clicking the button below:</h5>
+                    <button type="button" onclick="redirectAbout()" ><span></span>Check out your photos here</button>
                 </div>
-                <div class="counter-container">
-                  <span2 id="hours" class="counter">0</span2>
-                  <span2>Hour(s)</span2>
-                </div>
-                <div class="counter-container">
-                  <span2 id="minutes" class="counter">0</span2>
-                  <span2>Minute(s)</span2>
-                </div>
-                <div class="counter-container">
-                  <span2 id="seconds" class="counter">0</span2>
-                  <span2>Second(s)</span2>
-                </div>
-               
-              </div>
-              <div class="containertext11">
-                <h1 class="header-text">TIME LEFT UNTIL THE CONFERENCE</h1>
-              </div>
-              
-       
-        
-    
-  
-  
-             </div> 
         </section>
        
 
@@ -133,38 +105,6 @@ Prepare yourselves for a conference that surpasses all expectations. VarankMUN i
           
 
             var navLinks = document.getElementById("navlinks");
-            document.addEventListener("DOMContentLoaded", function() {
-    const countDownDate = new Date("Jul 4, 2024 10:00:00").getTime();
-    const daysElement = document.getElementById("days");
-    const hoursElement = document.getElementById("hours");
-    const minutesElement = document.getElementById("minutes");
-    const secondsElement = document.getElementById("seconds");
-  
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const duration = countDownDate - now;
-  
-      if (duration < 0) {
-        clearInterval(interval);
-        updateDuration(0);
-        return;
-      }
-  
-      updateDuration(duration);
-    }, 1000);
-  
-    function updateDuration(duration) {
-      const days = Math.floor(duration / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((duration % (1000 * 60)) / 1000);
-  
-      daysElement.innerHTML = days;
-      hoursElement.innerHTML = hours;
-      minutesElement.innerHTML = minutes;
-      secondsElement.innerHTML = seconds;
-    }
-  });
             function openBar()
             {
                 navLinks.style.display = "block";
@@ -179,7 +119,7 @@ Prepare yourselves for a conference that surpasses all expectations. VarankMUN i
             }
             function redirectAbout()
             {
-                window.location.href = "applynew.html";
+                window.location.href = "https://drive.google.com/drive/folders/11gyKdanfBfL-Z56daR0Kll5VSKaMmlyu";
             }
             function copyFunction() {
          
